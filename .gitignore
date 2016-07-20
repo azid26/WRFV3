@@ -8,6 +8,7 @@
 *.a
 *.temp
 *.map
+*.backup
 
 # Ignored files
 Registry/Registry

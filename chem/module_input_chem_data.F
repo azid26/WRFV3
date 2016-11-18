@@ -1163,7 +1163,7 @@ SUBROUTINE input_chem_profile (si_grid)
     end if
 
   END SUBROUTINE bdy_chem_value_GOCART
-  SUBROUTINE bdy_chem_value_tracer ( chem, nch )
+  SUBROUTINE bdy_chem_value_tracer ( chem, nch, vallbc )
 
 ! This subroutine is called to set the boundary values of chemistry
 ! species when chem_opt==CHEM_TRACER. Typically, the boundary values
@@ -1175,6 +1175,7 @@ SUBROUTINE input_chem_profile (si_grid)
 
     REAL,    intent(OUT)  :: chem
     INTEGER, intent(IN)   :: nch        ! index number of chemical species
+    REAL,    intent(IN)   :: vallbc
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     if( nch .ne. p_co  ) then
@@ -1744,7 +1745,7 @@ END SUBROUTINE bdy_chem_value_ghg
                    CALL bdy_chem_value_mosaic (   &
                         chem(i,k,j), alt(i,k,j), z(i,k,j), ic, config_flags )
                 else if (i_bdy_method .eq. 5) then
-                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic )
+                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic, vallbc )
                 else if (i_bdy_method .eq. 7) then
                    CALL bdy_chem_value_gocart ( chem(i,k,j), ic )
                 else if (i_bdy_method .eq. 8) then
@@ -1796,7 +1797,7 @@ END SUBROUTINE bdy_chem_value_ghg
                    CALL bdy_chem_value_mosaic (   &
                         chem(i,k,j), alt(i,k,j), z(i,k,j), ic, config_flags )
                 else if (i_bdy_method .eq. 5) then
-                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic )
+                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic, vallbc )
                 else if (i_bdy_method .eq. 6) then
                    CALL bdy_chem_value_gcm ( chem(i,k,j),chem_bye(i,k,1),chem_btye(i,k,1),dt,ic)
                 else if (i_bdy_method .eq. 7) then
@@ -1849,7 +1850,7 @@ END SUBROUTINE bdy_chem_value_ghg
                    CALL bdy_chem_value_mosaic (   &
                         chem(i,k,j), alt(i,k,j), z(i,k,j), ic, config_flags )
                 else if (i_bdy_method .eq. 5) then
-                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic )
+                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic, vallbc )
                 else if (i_bdy_method .eq. 6) then
                    CALL bdy_chem_value_gcm ( chem(i,k,j),chem_bxs(j,k,1),chem_btxs(j,k,1),dt,ic)
                 else if (i_bdy_method .eq. 7) then
@@ -1902,7 +1903,7 @@ END SUBROUTINE bdy_chem_value_ghg
                    CALL bdy_chem_value_mosaic (   &
                         chem(i,k,j), alt(i,k,j), z(i,k,j), ic, config_flags )
                 else if (i_bdy_method .eq. 5) then
-                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic )
+                   CALL bdy_chem_value_tracer ( chem(i,k,j), ic, vallbc )
                 else if (i_bdy_method .eq. 6) then
                    CALL bdy_chem_value_gcm ( chem(i,k,j),chem_bxe(j,k,1),chem_btxe(j,k,1),dt,ic)
                 else if (i_bdy_method .eq. 7) then

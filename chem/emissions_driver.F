@@ -980,6 +980,56 @@ CONTAINS
           end do
        end do
 !
+
+    CASE (CHEM_TRACE2)
+        do j=jts,jte
+           do i=its,ite
+              do k=kts,min(config_flags%kemit,kte-ksub)
+                conv = 4.828e-4/rho_phy(i,k,j)*dtstep/(dz8w(i,k,j)*60.)
+                chem(i,k,j,p_tracer_1)  = chem(i,k,j,p_tracer_1) &
+                     +emis_ant(i,k,j,p_e_tra1)*conv
+                chem(i,k,j,p_tracer_2)  = chem(i,k,j,p_tracer_2) &
+                     +emis_ant(i,k,j,p_e_tra2)*conv
+                chem(i,k,j,p_tracer_3)  = chem(i,k,j,p_tracer_3) &
+                     +emis_ant(i,k,j,p_e_tra3)*conv
+                chem(i,k,j,p_tracer_4)  = chem(i,k,j,p_tracer_4) &
+                     +emis_ant(i,k,j,p_e_tra4)*conv
+                chem(i,k,j,p_tracer_5)  = chem(i,k,j,p_tracer_5) &
+                     +emis_ant(i,k,j,p_e_tra5)*conv
+                chem(i,k,j,p_tracer_6)  = chem(i,k,j,p_tracer_6) &
+                     +emis_ant(i,k,j,p_e_tra6)*conv
+                chem(i,k,j,p_tracer_7)  = chem(i,k,j,p_tracer_7) &
+                     +emis_ant(i,k,j,p_e_tra7)*conv
+                chem(i,k,j,p_tracer_8)  = chem(i,k,j,p_tracer_8) &
+                     +emis_ant(i,k,j,p_e_tra8)*conv
+                chem(i,k,j,p_tracer_9)  = chem(i,k,j,p_tracer_9) &
+                     +emis_ant(i,k,j,p_e_tra9)*conv
+                chem(i,k,j,p_tracer_10)  = chem(i,k,j,p_tracer_10) &
+                     +emis_ant(i,k,j,p_e_tra10)*conv 
+                chem(i,k,j,p_tracer_11)  = chem(i,k,j,p_tracer_11) &
+                     +emis_ant(i,k,j,p_e_tra11)*conv 
+                chem(i,k,j,p_tracer_12)  = chem(i,k,j,p_tracer_12) &
+                     +emis_ant(i,k,j,p_e_tra12)*conv 
+                chem(i,k,j,p_tracer_13)  = chem(i,k,j,p_tracer_13) &
+                     +emis_ant(i,k,j,p_e_tra13)*conv 
+                chem(i,k,j,p_tracer_14)  = chem(i,k,j,p_tracer_14) &
+                     +emis_ant(i,k,j,p_e_tra14)*conv 
+                chem(i,k,j,p_tracer_15)  = chem(i,k,j,p_tracer_15) &
+                     +emis_ant(i,k,j,p_e_tra15)*conv 
+                chem(i,k,j,p_tracer_16)  = chem(i,k,j,p_tracer_16) &
+                     +emis_ant(i,k,j,p_e_tra16)*conv 
+                chem(i,k,j,p_tracer_17)  = chem(i,k,j,p_tracer_17) &
+                     +emis_ant(i,k,j,p_e_tra17)*conv 
+                chem(i,k,j,p_tracer_18)  = chem(i,k,j,p_tracer_18) &
+                     +emis_ant(i,k,j,p_e_tra18)*conv 
+                chem(i,k,j,p_tracer_19)  = chem(i,k,j,p_tracer_19) &
+                     +emis_ant(i,k,j,p_e_tra19)*conv 
+                chem(i,k,j,p_tracer_20)  = chem(i,k,j,p_tracer_20) &
+                     +emis_ant(i,k,j,p_e_tra20)*conv 
+              end do
+           end do
+        end do
+!
     CASE(CO2_TRACER,GHG_TRACER)  ! for ghg_tracer package
 
       ! Update the biospheric CO2 fluxes

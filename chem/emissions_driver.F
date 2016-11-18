@@ -1026,6 +1026,66 @@ CONTAINS
                      +emis_ant(i,k,j,p_e_tra19)*conv 
                 chem(i,k,j,p_tracer_20)  = chem(i,k,j,p_tracer_20) &
                      +emis_ant(i,k,j,p_e_tra20)*conv 
+                chem(i,k,j,p_tracer_21)  = chem(i,k,j,p_tracer_21) &
+                     +emis_ant(i,k,j,p_e_tra21)*conv 
+                chem(i,k,j,p_tracer_22)  = chem(i,k,j,p_tracer_22) &
+                     +emis_ant(i,k,j,p_e_tra22)*conv 
+                chem(i,k,j,p_tracer_23)  = chem(i,k,j,p_tracer_23) &
+                     +emis_ant(i,k,j,p_e_tra23)*conv 
+                chem(i,k,j,p_tracer_24)  = chem(i,k,j,p_tracer_24) &
+                     +emis_ant(i,k,j,p_e_tra24)*conv 
+                chem(i,k,j,p_tracer_25)  = chem(i,k,j,p_tracer_25) &
+                     +emis_ant(i,k,j,p_e_tra25)*conv 
+                chem(i,k,j,p_tracer_26)  = chem(i,k,j,p_tracer_26) &
+                     +emis_ant(i,k,j,p_e_tra26)*conv 
+                chem(i,k,j,p_tracer_27)  = chem(i,k,j,p_tracer_27) &
+                     +emis_ant(i,k,j,p_e_tra27)*conv 
+                chem(i,k,j,p_tracer_28)  = chem(i,k,j,p_tracer_28) &
+                     +emis_ant(i,k,j,p_e_tra28)*conv 
+                chem(i,k,j,p_tracer_29)  = chem(i,k,j,p_tracer_29) &
+                     +emis_ant(i,k,j,p_e_tra29)*conv 
+                chem(i,k,j,p_tracer_30)  = chem(i,k,j,p_tracer_30) &
+                     +emis_ant(i,k,j,p_e_tra30)*conv 
+                chem(i,k,j,p_tracer_31)  = chem(i,k,j,p_tracer_31) &
+                     +emis_ant(i,k,j,p_e_tra31)*conv 
+                chem(i,k,j,p_tracer_32)  = chem(i,k,j,p_tracer_32) &
+                     +emis_ant(i,k,j,p_e_tra32)*conv 
+                chem(i,k,j,p_tracer_33)  = chem(i,k,j,p_tracer_33) &
+                     +emis_ant(i,k,j,p_e_tra33)*conv 
+                chem(i,k,j,p_tracer_34)  = chem(i,k,j,p_tracer_34) &
+                     +emis_ant(i,k,j,p_e_tra34)*conv 
+                chem(i,k,j,p_tracer_35)  = chem(i,k,j,p_tracer_35) &
+                     +emis_ant(i,k,j,p_e_tra35)*conv 
+                chem(i,k,j,p_tracer_36)  = chem(i,k,j,p_tracer_36) &
+                     +emis_ant(i,k,j,p_e_tra36)*conv 
+                chem(i,k,j,p_tracer_37)  = chem(i,k,j,p_tracer_37) &
+                     +emis_ant(i,k,j,p_e_tra37)*conv 
+                chem(i,k,j,p_tracer_38)  = chem(i,k,j,p_tracer_38) &
+                     +emis_ant(i,k,j,p_e_tra38)*conv 
+                chem(i,k,j,p_tracer_39)  = chem(i,k,j,p_tracer_39) &
+                     +emis_ant(i,k,j,p_e_tra39)*conv 
+                chem(i,k,j,p_tracer_40)  = chem(i,k,j,p_tracer_40) &
+                     +emis_ant(i,k,j,p_e_tra40)*conv 
+                chem(i,k,j,p_tracer_41)  = chem(i,k,j,p_tracer_41) &
+                     +emis_ant(i,k,j,p_e_tra41)*conv 
+                chem(i,k,j,p_tracer_42)  = chem(i,k,j,p_tracer_42) &
+                     +emis_ant(i,k,j,p_e_tra42)*conv 
+                chem(i,k,j,p_tracer_43)  = chem(i,k,j,p_tracer_43) &
+                     +emis_ant(i,k,j,p_e_tra43)*conv 
+                chem(i,k,j,p_tracer_44)  = chem(i,k,j,p_tracer_44) &
+                     +emis_ant(i,k,j,p_e_tra44)*conv 
+                chem(i,k,j,p_tracer_45)  = chem(i,k,j,p_tracer_45) &
+                     +emis_ant(i,k,j,p_e_tra45)*conv 
+                chem(i,k,j,p_tracer_46)  = chem(i,k,j,p_tracer_46) &
+                     +emis_ant(i,k,j,p_e_tra46)*conv 
+                chem(i,k,j,p_tracer_47)  = chem(i,k,j,p_tracer_47) &
+                     +emis_ant(i,k,j,p_e_tra47)*conv 
+                chem(i,k,j,p_tracer_48)  = chem(i,k,j,p_tracer_48) &
+                     +emis_ant(i,k,j,p_e_tra48)*conv 
+                chem(i,k,j,p_tracer_49)  = chem(i,k,j,p_tracer_49) &
+                     +emis_ant(i,k,j,p_e_tra49)*conv 
+                chem(i,k,j,p_tracer_50)  = chem(i,k,j,p_tracer_50) &
+                     +emis_ant(i,k,j,p_e_tra50)*conv 
               end do
            end do
         end do

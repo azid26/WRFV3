@@ -1,5 +1,6 @@
 # Ignore compile log
 /*.log
+/*.log.*
 
 # Ignored file extensions
 *.o

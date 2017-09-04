@@ -724,55 +724,6 @@ SUBROUTINE input_chem_profile (si_grid)
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_co ) = 0.08
    ELSE IF ( si_grid%chem_opt == CHEM_TRACE2 ) THEN
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_1 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_2 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_3 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_4 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_5 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_6 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_7 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_8 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_9 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_10 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_11 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_12 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_13 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_14 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_15 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_16 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_17 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_18 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_19 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_20 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_21 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_22 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_23 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_24 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_25 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_26 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_27 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_28 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_29 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_30 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_31 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_32 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_33 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_34 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_35 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_36 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_37 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_38 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_39 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_40 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_41 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_42 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_43 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_44 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_45 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_46 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_47 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_48 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_49 ) = valinit
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_50 ) = valinit
    ELSE IF ( si_grid%chem_opt == CHEM_VASH ) THEN
       si_grid%chem(ims:ime,kms:kme,jms:jme,1:numgas ) = 0.
    ELSE IF ( si_grid%chem_opt == CHEM_VOLC ) THEN
@@ -1184,153 +1135,6 @@ SUBROUTINE input_chem_profile (si_grid)
        chem = conmin
     end if
     if( nch .eq. p_tracer_1  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_2  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_3  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_4  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_5  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_6  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_7  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_8  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_9  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_10  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_11  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_12  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_13  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_14  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_15  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_16  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_17  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_18  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_19  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_20  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_21  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_22  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_23  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_24  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_25  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_26  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_27  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_28  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_29  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_30  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_31  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_32  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_33  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_34  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_35  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_36  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_37  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_38  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_39  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_40  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_41  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_42  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_43  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_44  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_45  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_46  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_47  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_48  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_49  ) then
-       chem = vallbc
-    endif
-    if( nch .eq. p_tracer_50  ) then
        chem = vallbc
     endif
 
@@ -2319,7 +2123,7 @@ END SUBROUTINE bdy_chem_value_ghg
         get_last_gas = p_co
 
      case (CHEM_TRACE2)
-        get_last_gas = p_tracer_50
+        get_last_gas = p_tracer_1
 
      case (GOCART_SIMPLE)
         get_last_gas = p_msa

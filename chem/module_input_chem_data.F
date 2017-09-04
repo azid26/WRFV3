@@ -56,8 +56,8 @@ MODULE module_input_chem_data
 
 !  REAL :: grav = 9.8104
    REAL, PARAMETER :: mwso4 = 96.0576
-   REAL, PARAMETER :: valinit = 0.0
-   REAL, PARAMETER :: vallbc = 0.0
+   REAL, PARAMETER :: valinit = 300.0
+   REAL, PARAMETER :: vallbc = 300.0
 
 ! Variables for adaptive time steps...
       TYPE(WRFU_Time), DIMENSION(max_domains) :: last_chem_time

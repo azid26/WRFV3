@@ -723,8 +723,6 @@ SUBROUTINE input_chem_profile (si_grid)
 !     si_grid%chem(ims:ime,kms:kme,jms:jme,p_so2) = 0.0001
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_co ) = 0.08
    ELSE IF ( si_grid%chem_opt == CHEM_TRACE2 ) THEN
-      si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_1 ) = 0.08
-   ELSE IF ( si_grid%chem_opt == CHEM_TRACE2 ) THEN
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_1 ) = valinit
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_2 ) = valinit
       si_grid%chem(ims:ime,kms:kme,jms:jme,p_TRACER_3 ) = valinit
